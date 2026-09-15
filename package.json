@@ -1,0 +1,14 @@
+{
+  "name": "esther-daniel-wedding",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix src/frontend && npm install --prefix src/backend",
+    "dev": "concurrently \"npm run dev --prefix src/frontend\" \"npm run dev --prefix src/backend\"",
+    "build": "npm run build --prefix src/frontend",
+    "start": "npm run start --prefix src/frontend & npm run start --prefix src/backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
