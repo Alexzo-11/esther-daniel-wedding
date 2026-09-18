@@ -35,7 +35,7 @@ export default function Footer() {
             className="text-center mb-10"
           >
             <span className="font-script text-5xl md:text-6xl text-gold drop-shadow-lg">
-              E <span className="text-white/40">&amp;</span> D
+              EleOjo<span className="text-white/40">&amp;</span>'26
             </span>
             <p className="text-xs tracking-[0.4em] uppercase text-white/40 mt-2">
               Forever Begins
@@ -57,7 +57,7 @@ export default function Footer() {
               </p>
               <p className="text-gold/70 text-xs my-1">&</p>
               <p className="text-sm text-white/70 leading-relaxed">
-                Daniel Oionuwa Uwada
+                Daniel Ojonugwa Uwada
               </p>
             </motion.div>
 

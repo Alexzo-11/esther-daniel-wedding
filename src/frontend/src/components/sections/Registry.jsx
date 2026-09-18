@@ -20,7 +20,7 @@ export default function Registry() {
       border: 'border-green-200',
     },
     {
-      icon: 'NG',
+      icon: '🇳🇬',
       title: 'Naira Account',
       bank: 'ACCESS Bank',
       account: '009 9455 447',

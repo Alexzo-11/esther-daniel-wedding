@@ -14,60 +14,25 @@ export default function About() {
       firstName: 'Esther',
       name: 'Esther Eleojo Shaibu',
       role: 'Bride',
-      parents: 'MR & MRS PAUL SHAIBU',
+      parents: '',
       description:
         'A woman of grace, faith, and strength. Her joy and kindness have touched everyone who knows her. She loves the Lord and is ready to begin this beautiful journey with her beloved Daniel.',
-      heroImage: '/images/esther-hero.jpg',
-      gridImages: [
-        { src: '/images/esther-2.jpg', label: ' ' },
-        { src: '/images/esther-3.jpg', label: '' },
-      ],
+      image: '/images/esther.jpg',
       fallbackEmoji: '👰',
       traits: ['Grace', 'Faith', 'Joy'],
     },
     {
       firstName: 'Daniel',
-      name: 'Daniel Oionuwa Uwada',
+      name: 'Daniel Ojonugwa Uwada',
       role: 'Groom · Sir Dan',
-      parents: 'MR & MRS DAVID UWADA',
+      parents: '',
       description:
         'A man of integrity, passion, and purpose. He loves deeply, serves faithfully, and is overjoyed to call Esther his bride.',
-      heroImage: '/images/daniel-hero.jpg',
-      gridImages: [
-        { src: '/images/daniel-2.jpg', label: ' ' },
-        { src: '/images/daniel-3.jpg', label: ' ' },
-      ],
+      image: '/images/daniel.jpg',
       fallbackEmoji: '🤵',
       traits: ['Integrity', 'Purpose', 'Faithfulness'],
     },
   ];
-
-  // Helper to render an image or fallback emoji
-  const ImageTile = ({ src, label, emoji, aspect = 'aspect-square' }) => (
-    <div className={`relative ${aspect} w-full overflow-hidden rounded-2xl border-2 border-gold/30 shadow-lg group/tile`}>
-      <div className="absolute inset-0 bg-gradient-to-br from-royal/20 to-gold/20 z-10 opacity-30 group-hover/tile:opacity-0 transition-opacity duration-500" />
-      <img
-        src={src}
-        alt={label}
-        className="w-full h-full object-cover transition-transform duration-700 group-hover/tile:scale-110"
-        onError={(e) => {
-          e.target.style.display = 'none';
-          e.target.nextSibling.style.display = 'flex';
-        }}
-      />
-      <div
-        className="w-full h-full hidden items-center justify-center bg-gradient-to-br from-royal/10 via-gold/5 to-royal/10 text-4xl md:text-5xl"
-        style={{ display: 'none' }}
-      >
-        {emoji}
-      </div>
-      <div className="absolute bottom-2 left-2 z-20">
-        <span className="bg-black/60 backdrop-blur-sm text-gold text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full">
-          {label}
-        </span>
-      </div>
-    </div>
-  );
 
   return (
     <section id="about" className="relative py-24 overflow-hidden bg-cream">
@@ -112,13 +77,13 @@ export default function About() {
 
               {/* Card */}
               <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden border border-gold/10 hover:border-gold/30 transition-all duration-500 group-hover:shadow-2xl group-hover:-translate-y-2">
-                {/* ===== HERO IMAGE (Large Portrait) ===== */}
+                {/* ===== SINGLE PORTRAIT IMAGE ===== */}
                 <div className="relative px-6 pt-6">
                   <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl border-4 border-gold shadow-2xl group/hero">
                     <div className="absolute inset-0 bg-gradient-to-br from-royal/10 to-gold/10 z-10 opacity-40" />
 
                     <img
-                      src={person.heroImage}
+                      src={person.image}
                       alt={person.name}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover/hero:scale-105"
                       onError={(e) => {
@@ -146,21 +111,6 @@ export default function About() {
                         {person.firstName}
                       </h3>
                     </div>
-                  </div>
-                </div>
-
-                {/* ===== ADDITIONAL IMAGE GRID (Different Views) ===== */}
-                <div className="px-6 pt-4">
-                  <div className="grid grid-cols-2 gap-3">
-                    {person.gridImages.map((img, i) => (
-                      <ImageTile
-                        key={i}
-                        src={img.src}
-                        label={img.label}
-                        emoji={person.fallbackEmoji}
-                        aspect="aspect-square"
-                      />
-                    ))}
                   </div>
                 </div>
 
