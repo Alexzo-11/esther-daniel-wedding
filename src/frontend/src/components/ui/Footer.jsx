@@ -35,7 +35,7 @@ export default function Footer() {
             className="text-center mb-10"
           >
             <span className="font-script text-5xl md:text-6xl text-gold drop-shadow-lg">
-              EleOjo<span className="text-white/40">&amp;</span>'26
+              EleOjo<span className="text-white/40">'26</span>
             </span>
             <p className="text-xs tracking-[0.4em] uppercase text-white/40 mt-2">
               Forever Begins
