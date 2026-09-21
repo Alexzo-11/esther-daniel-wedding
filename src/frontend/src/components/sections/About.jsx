@@ -24,7 +24,7 @@ export default function About() {
     {
       firstName: 'Daniel',
       name: 'Daniel Ojonugwa Uwada',
-      role: 'Groom · Sir Dan',
+      role: 'Groom',
       parents: '',
       description:
         'A man of integrity, passion, and purpose. He loves deeply, serves faithfully, and is overjoyed to call Esther his bride.',
