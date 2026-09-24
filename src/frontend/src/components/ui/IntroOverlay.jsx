@@ -59,7 +59,9 @@ export default function IntroOverlay({ onComplete }) {
                     transition={{ delay: 0.3, duration: 0.8 }}
                     className="font-script text-4xl md:text-6xl text-gold tracking-wider"
                   >
-                    A Love Story
+                    
+                    EleOjo'26 
+                  
                   </motion.h1>
                   <motion.p
                     initial={{ opacity: 0 }}
@@ -67,7 +69,7 @@ export default function IntroOverlay({ onComplete }) {
                     transition={{ delay: 0.6, duration: 0.8 }}
                     className="font-serif text-lg md:text-xl text-white/60 tracking-[0.3em] uppercase mt-2"
                   >
-                    Now Told
+                    Love Story <br> Now Told
                   </motion.p>
                   <motion.div
                     initial={{ opacity: 0 }}

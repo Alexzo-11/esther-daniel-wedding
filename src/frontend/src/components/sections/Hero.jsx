@@ -16,7 +16,10 @@ export default function Hero() {
   }));
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-black via-royal-dark to-royal-deep">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-black via-royal-dark to-royal-deep"
+    >
       {/* Animated Background Particles */}
       <div className="absolute inset-0">
         {particles.map((p) => (
@@ -38,7 +41,7 @@ export default function Hero() {
               duration: p.duration,
               repeat: Infinity,
               delay: p.delay,
-              ease: "easeInOut",
+              ease: 'easeInOut',
             }}
           />
         ))}
@@ -58,7 +61,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <span className="inline-block bg-gold/10 backdrop-blur-sm text-gold text-xs font-semibold tracking-[0.3em] uppercase px-6 py-2 rounded-full border border-gold/20 mb-8">
+          <span className="inline-block bg-gold/10 backdrop-blur-sm text-gold text-xs md:text-sm font-bold tracking-[0.3em] uppercase px-6 py-2 rounded-full border border-gold/30 mb-8">
             Save the Date
           </span>
         </motion.div>
@@ -67,13 +70,13 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="font-script text-6xl md:text-8xl lg:text-9xl text-white leading-tight"
+          className="font-script text-6xl md:text-8xl lg:text-9xl font-bold text-white leading-tight"
         >
           Esther
           <motion.span
             className="text-gold inline-block mx-4"
             animate={{ rotate: [0, 10, -10, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
           >
             &amp;
           </motion.span>
@@ -86,13 +89,14 @@ export default function Hero() {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="mt-6"
         >
-          <p className="font-serif text-xl md:text-2xl text-white/70">
-            <span className="text-gold font-semibold">Saturday, 14th November 2026</span>
-            <span className="mx-3 text-white/30">·</span>
+          <p className="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-white/85">
+            <span className="text-gold font-extrabold">Saturday, 14th November 2026</span>
+            <span className="mx-3 text-white/40">·</span>
             9:00am Prompt
           </p>
-          <p className="text-white/40 text-sm md:text-base mt-1 tracking-wider">
-            Deeper Life Bible Church Headquarters, Bwari, Abuja
+          <p className="text-white/60 text-sm md:text-base mt-2 tracking-wider font-semibold">
+            Deeper Life Bible Church Regional Headquarters, 
+            Deeper life Junction, Bwari Abuja
           </p>
         </motion.div>
 
@@ -111,12 +115,11 @@ export default function Hero() {
           className="relative max-w-xl mx-auto"
         >
           <div className="absolute inset-x-0 top-1/2 h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
-          <blockquote className="relative bg-white/5 backdrop-blur-sm border border-gold/10 rounded-2xl px-6 md:px-8 py-6 mx-4">
-            <p className="font-serif italic text-white/60 text-sm md:text-base leading-relaxed">
-              "Every good gift and every perfect gift is from above,
-              and cometh down from the Father of lights..."
+          <blockquote className="relative bg-white/5 backdrop-blur-sm border border-gold/15 rounded-2xl px-6 md:px-8 py-6 mx-4">
+            <p className="font-serif italic text-white/80 text-sm md:text-base leading-relaxed font-semibold">
+              "Every good gift and every perfect gift is from above, and cometh down from the Father of lights..."
             </p>
-            <cite className="block not-italic text-xs text-gold/60 mt-2">
+            <cite className="block not-italic text-xs text-gold font-bold mt-2 tracking-wider">
               — James 1:17 (KJV)
             </cite>
           </blockquote>
@@ -130,7 +133,7 @@ export default function Hero() {
         >
           <a
             href="#rsvp"
-            className="group relative overflow-hidden bg-gradient-to-r from-gold to-gold-dark text-black font-semibold px-8 py-3 rounded-full hover:shadow-2xl hover:shadow-gold/25 transition-all duration-500"
+            className="group relative overflow-hidden bg-gradient-to-r from-gold to-gold-dark text-black font-bold px-8 py-3 rounded-full hover:shadow-2xl hover:shadow-gold/25 transition-all duration-500"
           >
             <span className="relative z-10 flex items-center gap-2">
               📋 Confirm Attendance
@@ -139,7 +142,7 @@ export default function Hero() {
           </a>
           <a
             href="#registry"
-            className="group relative overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold px-8 py-3 rounded-full hover:bg-white/20 transition-all duration-500"
+            className="group relative overflow-hidden bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-bold px-8 py-3 rounded-full hover:bg-white/20 transition-all duration-500"
           >
             <span className="relative z-10 flex items-center gap-2">
               🎁 Send a Gift
@@ -157,7 +160,7 @@ export default function Hero() {
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center"
+            className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center"
           >
             <motion.div
               animate={{ y: [0, 12, 0] }}

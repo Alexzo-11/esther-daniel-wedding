@@ -6,7 +6,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   // WhatsApp link — opens chat with prefilled message
-  const whatsappNumber = '2348106509069'; // International format (Nigeria +234, drop leading 0)
+  const whatsappNumber = '2348106509069';
   const whatsappMessage = encodeURIComponent(
     "Hi Alexander! I saw your design work on Esther & Daniel's wedding website and I'd love to work with you. Are you available?"
   );
@@ -18,9 +18,7 @@ export default function Footer() {
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-[400px] h-[400px] bg-gold/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-royal-light/10 rounded-full blur-3xl" />
-        {/* Gold top border accent */}
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
-        {/* Decorative ring */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-gold/5 rounded-full" />
       </div>
 
@@ -34,10 +32,10 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
             className="text-center mb-10"
           >
-            <span className="font-script text-5xl md:text-6xl text-gold drop-shadow-lg">
+            <span className="font-script text-5xl md:text-6xl font-bold text-gold drop-shadow-lg">
               EleOjo<span className="text-white/40">'26</span>
             </span>
-            <p className="text-xs tracking-[0.4em] uppercase text-white/40 mt-2">
+            <p className="text-xs tracking-[0.4em] uppercase text-white/60 mt-2 font-bold">
               Forever Begins
             </p>
           </motion.div>
@@ -51,12 +49,12 @@ export default function Footer() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <h3 className="font-serif text-gold text-lg mb-3">The Couple</h3>
-              <p className="text-sm text-white/70 leading-relaxed">
+              <h3 className="font-serif text-gold text-xl font-bold mb-3">The Couple</h3>
+              <p className="text-sm text-white/85 font-semibold leading-relaxed">
                 Esther Eleojo Shaibu
               </p>
-              <p className="text-gold/70 text-xs my-1">&</p>
-              <p className="text-sm text-white/70 leading-relaxed">
+              <p className="text-gold text-base font-bold my-1">&</p>
+              <p className="text-sm text-white/85 font-semibold leading-relaxed">
                 Daniel Ojonugwa Uwada
               </p>
             </motion.div>
@@ -69,17 +67,17 @@ export default function Footer() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="md:border-l md:border-r md:border-white/10 md:px-6"
             >
-              <h3 className="font-serif text-gold text-lg mb-3">The Ceremony</h3>
-              <p className="text-sm text-white/70 leading-relaxed">
+              <h3 className="font-serif text-gold text-xl font-bold mb-3">The Ceremony</h3>
+              <p className="text-sm text-white/85 font-semibold leading-relaxed">
                 Saturday, 14th November 2026
               </p>
-              <p className="text-gold/70 text-xs my-1">·</p>
-              <p className="text-sm text-white/70 leading-relaxed">
+              <p className="text-gold text-base font-bold my-1">·</p>
+              <p className="text-sm text-white/85 font-semibold leading-relaxed">
                 9:00am Prompt
               </p>
-              <p className="text-xs text-white/40 mt-2">
-                Deeper Life Bible Church Headquarters
-                <br />Bwari, Abuja
+              <p className="text-xs text-white/70 mt-2 font-semibold leading-relaxed">
+                Deeper Life Bible Church Regional Headquarters,
+                <br />Deeper Life Junction, Bwari, Abuja
               </p>
             </motion.div>
 
@@ -90,13 +88,13 @@ export default function Footer() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <h3 className="font-serif text-gold text-lg mb-3">RSVP Contacts</h3>
-              <p className="text-sm text-white/70 leading-relaxed">
-                Mercy <span className="text-white">09067521268</span>
+              <h3 className="font-serif text-gold text-xl font-bold mb-3">RSVP Contacts</h3>
+              <p className="text-sm text-white/85 font-semibold leading-relaxed">
+                Mercy <span className="text-white font-bold">09067521268</span>
               </p>
-              <p className="text-gold/70 text-xs my-1">·</p>
-              <p className="text-sm text-white/70 leading-relaxed">
-                Innocent <span className="text-white">08102705038</span>
+              <p className="text-gold text-base font-bold my-1">·</p>
+              <p className="text-sm text-white/85 font-semibold leading-relaxed">
+                Innocent <span className="text-white font-bold">08102705038</span>
               </p>
             </motion.div>
           </div>
@@ -116,11 +114,10 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-center"
           >
-            <p className="font-serif italic text-lg text-gold-light max-w-2xl mx-auto leading-relaxed">
-              "Every good gift and every perfect gift is from above,
-              and cometh down from the Father of lights..."
+            <p className="font-serif italic text-lg text-gold-light max-w-2xl mx-auto leading-relaxed font-bold">
+              "Every good gift and every perfect gift is from above, and cometh down from the Father of lights..."
             </p>
-            <cite className="block not-italic text-xs text-white/40 mt-2 tracking-widest uppercase">
+            <cite className="block not-italic text-xs text-white/60 mt-2 tracking-widest uppercase font-bold">
               James 1:17 · KJV
             </cite>
           </motion.blockquote>
@@ -133,9 +130,9 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="mt-12 pt-6 border-t border-white/10 text-center"
           >
-            <p className="text-xs text-white/40">
+            <p className="text-xs text-white/60 font-semibold">
               &copy; {currentYear} Esther &amp; Daniel
-              <span className="mx-2 text-gold/40">·</span>
+              <span className="mx-2 text-gold/60">·</span>
               Made with <span className="text-red-500">❤</span> for a lifetime of love
             </p>
 
@@ -147,19 +144,17 @@ export default function Footer() {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="mt-4 flex items-center justify-center gap-2 text-xs"
             >
-              <span className="text-white/30">Designed by</span>
+              <span className="text-white/50 font-semibold">Designed by</span>
               <a
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative inline-flex items-center gap-2 font-semibold text-gold hover:text-gold-light transition-colors duration-300"
+                className="group relative inline-flex items-center gap-2 font-bold text-gold hover:text-gold-light transition-colors duration-300"
               >
                 <span className="relative">
                   Alexander Innocent
-                  {/* Animated underline */}
                   <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-gold group-hover:w-full transition-all duration-500" />
                 </span>
-                {/* WhatsApp icon */}
                 <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-green-500/20 border border-green-400/40 group-hover:bg-green-500 group-hover:scale-110 transition-all duration-300">
                   <svg
                     className="w-3 h-3 text-green-400 group-hover:text-white transition-colors"
